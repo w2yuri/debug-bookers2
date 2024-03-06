@@ -47,9 +47,8 @@ before_action :ensure_correct_user, only: [:edit, :update, :destroy]
       unless @book.user == current_user
         redirect_to books_path
       end
-    end
-   end
-
+  end
+  
   private
 
   def book_params
